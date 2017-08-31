@@ -1,0 +1,81 @@
+/*
+
+This is the Material Design theme for FullCalendar Weekly Agenda view
+
+Creation Date: Aug 19th 2015
+Author: Jacky Liang
+Version: FullCalendar 2.4.0
+Tested Using the Following FC Settings:
+
+    editable: false,
+    handleWindowResize: true,
+    weekends: false, // Hide weekends
+    defaultView: 'agendaWeek', // Only show week view
+    header: false, // Hide buttons/titles
+    minTime: '07:30:00', // Start time for the calendar
+    maxTime: '22:00:00', // End time for the calendar
+    columnFormat: {
+        week: 'ddd' // Only show day of the week names
+    },
+    displayEventTime: true,
+    allDayText: 'Online/TBD'
+
+Note: This has NOT been tested on Monthly or Daily views.
+
+Colors: Use the following - https://www.google.com/design/spec/style/color.html#color-color-palette
+        at the 700 level. An opacity of 0.65 is automatically applied to the
+        700 level colors to generate a soft and pleasing look.
+
+        Color were applied to each event using the following code:
+
+        events.push({
+            title: 'This is a Material Design event!',
+            start: 'someStartDate',
+            end: 'someEndDate',
+            color: '#C2185B'
+        });
+
+*/
+
+/*----------------------------------------
+    Calender
+------------------------------------------*/
+
+#full-calendar {
+  padding-top: 30px;
+}
+#calendar h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  line-height: 35px;
+}
+#calendar .fc-day-header {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+#external-events {
+  padding-top: 50px;
+}
+#external-events .fc-event {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  margin-bottom: 10px;
+  cursor: all-scroll;
+  border: none;
+}
+.fc button {
+  background: #fff;
+}
+.fc td,
+.fc th {
+  border-width: 0px !important;
+}
+.fc-state-active,
+.fc-state-down {
+  color: #ff4081 !important;
+}
+
+.fc-unthemed td.fc-today {
+  background: #e3ebfc;
+}

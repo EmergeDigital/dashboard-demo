@@ -1,0 +1,136 @@
+<!-- <div id="map"></div> -->
+
+<div class="main-content">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header" data-background-color="red">
+                    <h4 class="title">Add Users</h4>
+                    <p class="category">For new members or home owners</p>
+                </div>
+                <div class="card-content">
+                    <div id="typography">
+                      <form>
+                          <div class="row">
+                              <div class="col-md-5">
+                                  <div class="form-group form-black label-floating">
+                                      <label class="control-label">User Type (Member/Home Owner)</label>
+                                      <input type="text" class="form-control" [(ngModel)]="user.type" name="0">
+                                  </div>
+                              </div>
+                              <div class="col-md-3">
+                                  <div class="form-group form-black label-floating">
+                                      <label class="control-label">Cellphone Number</label>
+                                      <input type="text" class="form-control" [(ngModel)]="user.cell" name="1">
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="form-group form-black label-floating">
+                                      <label class="control-label">Email address</label>
+                                      <input type="email" class="form-control" [(ngModel)]="user.email" name="2">
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <div class="form-group form-black label-floating">
+                                      <label class="control-label">First Name</label>
+                                      <input type="text" class="form-control" [(ngModel)]="user.firstname" name="3">
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="form-group form-black label-floating">
+                                      <label class="control-label">Last Name</label>
+                                      <input type="text" class="form-control" [(ngModel)]="user.surname" name="4">
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="form-group form-black label-floating">
+                                      <label class="control-label">Address</label>
+                                      <input type="text" class="form-control" [(ngModel)]="user.address" name="5">
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="row">
+                              <div class="col-md-4">
+                                  <div class="form-group form-black label-floating">
+                                      <label class="control-label">City</label>
+                                      <input type="text" class="form-control" [(ngModel)]="user.city" name="6">
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="form-group form-black label-floating">
+                                      <label class="control-label">Country</label>
+                                      <input type="text" class="form-control" [(ngModel)]="user.country" name="7">
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="form-group form-black label-floating">
+                                      <label class="control-label">Postal Code</label>
+                                      <input type="text" class="form-control" [(ngModel)]="user.postal" name="8">
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="form-group">
+                                      <label>Notes</label>
+                                      <div class="form-group form-black label-floating">
+                                          <!-- <label class="control-label">About Me</label> -->
+                                          <textarea class="form-control" rows="5" [(ngModel)]="user.notes" name="9">{{user.notes}}</textarea>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <button type="submit" class="btn btn-danger pull-right" (click)="createProfile()">Create Profile</button>
+                          <div class="clearfix"></div>
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header" data-background-color="green">
+                <h4 class="title">Users</h4>
+                <p class="category">All the members and home owners</p>
+            </div>
+            <div class="card-content table-responsive">
+                <table class="table">
+                    <thead class="text-success">
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Email</th>
+                            <th>Cell</th>
+                            <th>Account</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let u of users">
+                            <td>{{u.name}}</td>
+                            <td>{{u.type}}</td>
+                            <td>{{u.email}}</td>
+                            <td>{{u.cell}}</td>
+                            <td>
+                              <span *ngIf="u.balance" class="text-danger">R{{u.balance}}</span>
+                              <span *ngIf="!u.balance" class="text-success">R0.00</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
