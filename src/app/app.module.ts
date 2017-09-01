@@ -30,8 +30,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     IconsComponent,
     MapsComponent,
     NotificationsComponent,
-    UpgradeComponent,
-    CalendarModule
+    UpgradeComponent
 
   ],
   imports: [
@@ -40,8 +39,10 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     HttpModule,
     ComponentsModule,
 RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CalendarModule.forRoot()
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })
