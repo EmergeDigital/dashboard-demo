@@ -35,13 +35,13 @@ import { ScrollStoreModule } from 'scrollstore';
 
   ],
   imports: [
+    ScrollStoreModule,
     BrowserModule,
     FormsModule,
     HttpModule,
     ComponentsModule,
     RouterModule,
     AppRoutingModule,
-    ScrollStoreModule,
     CalendarModule.forRoot()
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
