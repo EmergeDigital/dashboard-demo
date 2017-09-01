@@ -1,0 +1,43 @@
+
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header" data-background-color="red">
+                        <h4 class="title">Admin Dashboard Demo</h4>
+                        <p class="category">Handcrafted by <a target="_blank" href="http://emergedigital.co.za">Emerge Digital</a></p>
+                    </div>
+                    <div class="card-content">
+                      <div class="add-event">
+                        <form class="example-form">
+                          <!-- <div class="row"> -->
+                          <md-form-field>
+                            <input mdInput [mdDatepicker]="picker" placeholder="Choose a date">
+                            <md-datepicker-toggle mdSuffix [for]="picker"></md-datepicker-toggle>
+                            <md-datepicker #picker></md-datepicker>
+                          </md-form-field>
+                            <div class="col-md-4">
+                              <md-form-field class="example-full-width">
+                                <input mdInput placeholder="Favorite food" value="Sushi">
+                              </md-form-field>
+                            </div>
+                            <div class="col-md-4">
+                              <md-form-field class="example-full-width">
+                                <input mdInput placeholder="Favorite food" value="Sushi">
+                              </md-form-field>
+                            </div>
+                            <div class="col-md-4">
+                              <md-form-field class="example-full-width">
+                                <input mdInput placeholder="Favorite food" value="Sushi">
+                              </md-form-field>
+                            </div>
+                          <!-- </div> -->
+                        </form>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

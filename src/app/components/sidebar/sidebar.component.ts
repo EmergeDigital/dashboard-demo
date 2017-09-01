@@ -14,7 +14,7 @@ export const ROUTES: RouteInfo[] = [
     { path: 'calendar', title: 'Calendar',  icon:'event', class: '' },
     { path: 'add-users', title: 'Add Users',  icon:'add', class: '' },
     { path: 'notifications', title: 'Notifications',  icon:'notifications', class: '' },
-    { path: 'emerge', title: 'Creators',  icon:'bubble_chart', class: '' }
+    { path: 'emerge', title: 'Creators',  icon:'bubble_chart', class: 'active-pro' }
 ];
 
 @Component({
