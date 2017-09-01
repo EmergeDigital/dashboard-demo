@@ -17,7 +17,8 @@ import { IconsComponent } from './icons/icons.component';
 import { MapsComponent } from './maps/maps.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { UpgradeComponent } from './upgrade/upgrade.component';
-import {CalendarComponent} from "angular2-fullcalendar/src/calendar/calendar";
+import {CalendarModule} from "ap-angular2-fullcalendar";
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import {CalendarComponent} from "angular2-fullcalendar/src/calendar/calendar";
     MapsComponent,
     NotificationsComponent,
     UpgradeComponent,
-    CalendarComponent
+    CalendarModule
 
   ],
   imports: [
