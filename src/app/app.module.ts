@@ -19,6 +19,7 @@ import { NotificationsComponent } from './notifications/notifications.component'
 import { UpgradeComponent } from './upgrade/upgrade.component';
 import {CalendarModule} from "ap-angular2-fullcalendar";
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { ScrollStoreModule } from 'scrollstore';
 
 @NgModule({
   declarations: [
@@ -38,8 +39,9 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     FormsModule,
     HttpModule,
     ComponentsModule,
-RouterModule,
+    RouterModule,
     AppRoutingModule,
+    ScrollStoreModule,
     CalendarModule.forRoot()
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

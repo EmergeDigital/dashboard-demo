@@ -19,7 +19,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "./assets/sass/material-dashboard.scss"
+        "./assets/sass/material-dashboard.scss",
+        "../node_modules/fullcalendar/dist/fullcalendar.min.css"
       ],
       "scripts": [
           "../node_modules/jquery/dist/jquery.js",

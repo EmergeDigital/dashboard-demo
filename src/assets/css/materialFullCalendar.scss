@@ -40,7 +40,6 @@ Colors: Use the following - https://www.google.com/design/spec/style/color.html#
 /*----------------------------------------
     Calender
 ------------------------------------------*/
-
 #full-calendar {
   padding-top: 30px;
 }
@@ -77,7 +76,7 @@ Colors: Use the following - https://www.google.com/design/spec/style/color.html#
 }
 
 .fc-unthemed td.fc-today {
-  background: #e3ebfc;
+  background: #e3ebfc !important;
 }
 
 .fc-event {
